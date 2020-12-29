@@ -1,4 +1,5 @@
-import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
+import Link from 'next/link';
 
 const AppNavbar = () => {
   return (
@@ -8,9 +9,11 @@ const AppNavbar = () => {
         <Navbar.Toggle></Navbar.Toggle>
         <Navbar.Collapse>
           <Nav className="mr-auto">
-            <Nav.Link href="/portfolios" className="mr-3">
-              Portfolios
-            </Nav.Link>
+            <Link href="/portfolios">
+              <a className="nav-link mr-3">
+                Portfolios
+              </a>
+            </Link>
             <Nav.Link href="/forum/categories" className="mr-3">
               Forum
             </Nav.Link>
