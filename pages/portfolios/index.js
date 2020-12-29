@@ -2,7 +2,7 @@ const apiCall = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve({ testingData: 'Just some testing Data'});
-    } , 200);
+    } , 0);
   })
 }
 
