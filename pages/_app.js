@@ -10,7 +10,7 @@ const MyApp = ( {Component, pageProps}) => {
   return (
     <div className="portfolio-app">
       <Navbar />
-      <Hero />
+      { Component.name === 'Home' && <Hero /> }
       <div className="container">
         <Component {...pageProps} />
       </div>
